@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=U2 Old Footprint=44M1_L New Footprint=44M1_N
+Change Component Footprint: Designator=C1 Old Footprint=CAPC0805(2012)100_L New Footprint=CAPC0805(2012)100_M
+Change Component Footprint: Designator=C2 Old Footprint=CAPC0805(2012)100_L New Footprint=CAPC0805(2012)100_M
+Change Component Footprint: Designator=C3 Old Footprint=CAPC0805(2012)100_L New Footprint=CAPC0805(2012)100_M
+Change Component Footprint: Designator=C4 Old Footprint=CAPC0805(2012)100_L New Footprint=CAPC0805(2012)100_M
+Change Component Footprint: Designator=C5 Old Footprint=CAPC0805(2012)100_L New Footprint=CAPC0805(2012)100_M
+Change Component Footprint: Designator=R1 Old Footprint=RESC0805(2012)_L New Footprint=RESC0805(2012)_N

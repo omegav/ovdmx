@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [DMXController.PcbDoc]
+   Generated File[DMXController.TXT]
+   Generated File[DMXController.LDP]
+   Generated File[DMXController.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 14:50:06 On 27.10.2013

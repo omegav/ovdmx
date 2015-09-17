@@ -1,0 +1,16 @@
+Added Component: Designator=U2(44M1_L)
+Added Pin To Net: NetName=GND Pin=U2-8
+Added Pin To Net: NetName=3.3V Pin=U2-9
+Added Pin To Net: NetName=DE Pin=U2-15
+Added Pin To Net: NetName=DMX_RX Pin=U2-16
+Added Pin To Net: NetName=DMX_TX Pin=U2-17
+Added Pin To Net: NetName=GND Pin=U2-18
+Added Pin To Net: NetName=3.3V Pin=U2-19
+Added Pin To Net: NetName=D- Pin=U2-26
+Added Pin To Net: NetName=D+ Pin=U2-27
+Added Pin To Net: NetName=GND Pin=U2-30
+Added Pin To Net: NetName=3.3V Pin=U2-31
+Added Pin To Net: NetName=GND Pin=U2-38
+Added Pin To Net: NetName=3.3V Pin=U2-39
+Added Pin To Net: NetName=GND Pin=U2-45
+Added Member To Class: ClassName=DMXController Member=Component U2 ATxmega64A4U-MH

@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.1</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>{e1afbf26-2585-41f8-878c-36712c7ef5b9}</ProjectGuid>
+    <avrdevice>ATxmega64A4U</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>DMXController</AssemblyName>
+    <Name>DMXController</Name>
+    <RootNamespace>DMXController</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue>
+    </OverrideVtorValue>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>2</BootSegment>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options>
+          <option id="common.services.usb.class.device" value="Add" config="cdc" content-id="Atmel.ASF" />
+        </options>
+        <configurations>
+          <configuration key="config.xmega.drivers.usb.device.sleepmgr" value="with_sleepmgr" default="with_sleepmgr" content-id="Atmel.ASF" />
+        </configurations>
+        <files>
+          <file path="src/ASF/common/utils/make/Makefile.avr.in" framework="" version="3.8.1" source="common\utils\make\Makefile.avr.in" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/drivers/cpu/ccp.s" framework="" version="3.8.1" source="xmega\drivers\cpu\ccp.s" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/drivers/cpu/xmega_reset_cause.h" framework="" version="3.8.1" source="xmega\drivers\cpu\xmega_reset_cause.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/drivers/cpu/ccp.h" framework="" version="3.8.1" source="xmega\drivers\cpu\ccp.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/drivers/nvm/nvm.c" framework="" version="3.8.1" source="xmega\drivers\nvm\nvm.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/drivers/nvm/nvm_asm.s" framework="" version="3.8.1" source="xmega\drivers\nvm\nvm_asm.s" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/drivers/nvm/nvm.h" framework="" version="3.8.1" source="xmega\drivers\nvm\nvm.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/drivers/sleep/sleep.h" framework="" version="3.8.1" source="xmega\drivers\sleep\sleep.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/clock/xmega/sysclk.c" framework="" version="3.8.1" source="common\services\clock\xmega\sysclk.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/clock/pll.h" framework="" version="3.8.1" source="common\services\clock\pll.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/clock/genclk.h" framework="" version="3.8.1" source="common\services\clock\genclk.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/clock/osc.h" framework="" version="3.8.1" source="common\services\clock\osc.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/clock/xmega/pll.h" framework="" version="3.8.1" source="common\services\clock\xmega\pll.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/clock/xmega/sysclk.h" framework="" version="3.8.1" source="common\services\clock\xmega\sysclk.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/clock/xmega/osc.h" framework="" version="3.8.1" source="common\services\clock\xmega\osc.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/clock/sysclk.h" framework="" version="3.8.1" source="common\services\clock\sysclk.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/Config/conf_clock.h" framework="" version="3.8.1" source="common\services\clock\xmega\module_config_usb\conf_clock.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/sleepmgr/xmega/sleepmgr.c" framework="" version="3.8.1" source="common\services\sleepmgr\xmega\sleepmgr.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/sleepmgr/sleepmgr.h" framework="" version="3.8.1" source="common\services\sleepmgr\sleepmgr.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/sleepmgr/xmega/sleepmgr.h" framework="" version="3.8.1" source="common\services\sleepmgr\xmega\sleepmgr.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/Config/conf_sleepmgr.h" framework="" version="3.8.1" source="common\services\sleepmgr\xmega\module_config\conf_sleepmgr.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/usb/usb_atmel.h" framework="" version="3.8.1" source="common\services\usb\usb_atmel.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/usb/usb_protocol.h" framework="" version="3.8.1" source="common\services\usb\usb_protocol.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/usb/class/cdc/usb_protocol_cdc.h" framework="" version="3.8.1" source="common\services\usb\class\cdc\usb_protocol_cdc.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/usb/class/cdc/device/udi_cdc.c" framework="" version="3.8.1" source="common\services\usb\class\cdc\device\udi_cdc.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/usb/class/cdc/device/udi_cdc_desc.c" framework="" version="3.8.1" source="common\services\usb\class\cdc\device\udi_cdc_desc.c" changed="False" content-id="Atmel.ASF" />
+          <file path="atmel_devices_cdc.cat" framework="" version="3.8.1" source="common\services\usb\class\cdc\device\atmel_devices_cdc.cat" changed="False" content-id="Atmel.ASF" />
+          <file path="atmel_devices_cdc.inf" framework="" version="3.8.1" source="common\services\usb\class\cdc\device\atmel_devices_cdc.inf" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/usb/class/cdc/device/udi_cdc.h" framework="" version="3.8.1" source="common\services\usb\class\cdc\device\udi_cdc.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/usb/class/cdc/device/udi_cdc_conf.h" framework="" version="3.8.1" source="common\services\usb\class\cdc\device\udi_cdc_conf.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/Config/conf_usb.h" framework="" version="3.8.1" source="common\services\usb\class\cdc\device\module_config\conf_usb.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/usb/udc/udc.c" framework="" version="3.8.1" source="common\services\usb\udc\udc.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/usb/udc/udc.h" framework="" version="3.8.1" source="common\services\usb\udc\udc.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/usb/udc/udd.h" framework="" version="3.8.1" source="common\services\usb\udc\udd.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/usb/udc/udc_desc.h" framework="" version="3.8.1" source="common\services\usb\udc\udc_desc.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/usb/udc/udi.h" framework="" version="3.8.1" source="common\services\usb\udc\udi.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/interrupt.h" framework="" version="3.8.1" source="common\utils\interrupt.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/interrupt/interrupt_avr8.h" framework="" version="3.8.1" source="common\utils\interrupt\interrupt_avr8.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/parts.h" framework="" version="3.8.1" source="common\utils\parts.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/drivers/usb/usb_device.c" framework="" version="3.8.1" source="xmega\drivers\usb\usb_device.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/drivers/usb/usb_device.h" framework="" version="3.8.1" source="xmega\drivers\usb\usb_device.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/progmem.h" framework="" version="3.8.1" source="xmega\utils\progmem.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/assembler.h" framework="" version="3.8.1" source="xmega\utils\assembler.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/bit_handling/clz_ctz.h" framework="" version="3.8.1" source="xmega\utils\bit_handling\clz_ctz.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/preprocessor/preprocessor.h" framework="" version="3.8.1" source="xmega\utils\preprocessor\preprocessor.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/preprocessor/stringz.h" framework="" version="3.8.1" source="xmega\utils\preprocessor\stringz.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/preprocessor/tpaste.h" framework="" version="3.8.1" source="xmega\utils\preprocessor\tpaste.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/compiler.h" framework="" version="3.8.1" source="xmega\utils\compiler.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/status_codes.h" framework="" version="3.8.1" source="xmega\utils\status_codes.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/preprocessor/mrepeat.h" framework="" version="3.8.1" source="xmega\utils\preprocessor\mrepeat.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/xmega/utils/assembler/gas.h" framework="" version="3.8.1" source="xmega\utils\assembler\gas.h" changed="False" content-id="Atmel.ASF" />
+        </files>
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.8.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrtoolinterface>PDI</avrtoolinterface>
+    <avrtool>com.atmel.avrdbg.tool.jtagicemk3</avrtool>
+    <com_atmel_avrdbg_tool_jtagicemk3>
+      <ToolType xmlns="">com.atmel.avrdbg.tool.jtagicemk3</ToolType>
+      <ToolName xmlns="">JTAGICE3</ToolName>
+      <ToolNumber xmlns="">J30200017536</ToolNumber>
+      <StimuliFile xmlns="">
+      </StimuliFile>
+      <Channel xmlns="">
+        <host>127.0.0.1</host>
+        <port>49679</port>
+        <ssl>False</ssl>
+      </Channel>
+      <ToolOptions xmlns="">
+        <InterfaceName>PDI</InterfaceName>
+        <InterfaceProperties>
+          <JtagDbgClock>7500000</JtagDbgClock>
+          <SwdClock>249000</SwdClock>
+          <JtagProgClock>7500000</JtagProgClock>
+          <IspClock>125000</IspClock>
+          <JtagInChain>false</JtagInChain>
+          <JtagEnableExtResetOnStartSession>false</JtagEnableExtResetOnStartSession>
+          <JtagDevicesBefore>0</JtagDevicesBefore>
+          <JtagDevicesAfter>0</JtagDevicesAfter>
+          <JtagInstrBitsBefore>0</JtagInstrBitsBefore>
+          <JtagInstrBitsAfter>0</JtagInstrBitsAfter>
+          <PdiClock>4000000</PdiClock>
+          <AWireMaxBaud>7500000</AWireMaxBaud>
+        </InterfaceProperties>
+      </ToolOptions>
+    </com_atmel_avrdbg_tool_jtagicemk3>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../src/ASF/xmega/drivers/cpu</Value>
+      <Value>../src/ASF/xmega/drivers/nvm</Value>
+      <Value>../src/ASF/xmega/drivers/sleep</Value>
+      <Value>../src/Config</Value>
+      <Value>../src/ASF/common/services/clock</Value>
+      <Value>../src/ASF/common/services/sleepmgr</Value>
+      <Value>../src/ASF/common/services/usb</Value>
+      <Value>../src/ASF/common/services/usb/class/cdc</Value>
+      <Value>../src/ASF/common/services/usb/class/cdc/device</Value>
+      <Value>../src/ASF/common/services/usb/udc</Value>
+      <Value>../src/ASF/common/utils</Value>
+      <Value>../src/ASF/xmega/drivers/usb</Value>
+      <Value>../src/ASF/xmega/utils/preprocessor</Value>
+      <Value>../src/ASF/xmega/utils</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>../src/ASF/xmega/drivers/cpu</Value>
+      <Value>../src/ASF/xmega/drivers/nvm</Value>
+      <Value>../src/ASF/xmega/drivers/sleep</Value>
+      <Value>../src/Config</Value>
+      <Value>../src/ASF/common/services/clock</Value>
+      <Value>../src/ASF/common/services/sleepmgr</Value>
+      <Value>../src/ASF/common/services/usb</Value>
+      <Value>../src/ASF/common/services/usb/class/cdc</Value>
+      <Value>../src/ASF/common/services/usb/class/cdc/device</Value>
+      <Value>../src/ASF/common/services/usb/udc</Value>
+      <Value>../src/ASF/common/utils</Value>
+      <Value>../src/ASF/xmega/drivers/usb</Value>
+      <Value>../src/ASF/xmega/utils/preprocessor</Value>
+      <Value>../src/ASF/xmega/utils</Value>
+    </ListValues>
+  </avrgcc.assembler.general.IncludePaths>
+</AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>../src/ASF/xmega/drivers/cpu</Value>
+            <Value>../src/ASF/xmega/drivers/nvm</Value>
+            <Value>../src/ASF/xmega/drivers/sleep</Value>
+            <Value>../src/Config</Value>
+            <Value>../src/ASF/common/services/clock</Value>
+            <Value>../src/ASF/common/services/sleepmgr</Value>
+            <Value>../src/ASF/common/services/usb</Value>
+            <Value>../src/ASF/common/services/usb/class/cdc</Value>
+            <Value>../src/ASF/common/services/usb/class/cdc/device</Value>
+            <Value>../src/ASF/common/services/usb/udc</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/xmega/drivers/usb</Value>
+            <Value>../src/ASF/xmega/utils/preprocessor</Value>
+            <Value>../src/ASF/xmega/utils</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>../src/ASF/xmega/drivers/cpu</Value>
+            <Value>../src/ASF/xmega/drivers/nvm</Value>
+            <Value>../src/ASF/xmega/drivers/sleep</Value>
+            <Value>../src/Config</Value>
+            <Value>../src/ASF/common/services/clock</Value>
+            <Value>../src/ASF/common/services/sleepmgr</Value>
+            <Value>../src/ASF/common/services/usb</Value>
+            <Value>../src/ASF/common/services/usb/class/cdc</Value>
+            <Value>../src/ASF/common/services/usb/class/cdc/device</Value>
+            <Value>../src/ASF/common/services/usb/udc</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/xmega/drivers/usb</Value>
+            <Value>../src/ASF/xmega/utils/preprocessor</Value>
+            <Value>../src/ASF/xmega/utils</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+        <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DMXController.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="atmel_devices_cdc.cat">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="atmel_devices_cdc.inf">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
