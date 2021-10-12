@@ -13,4 +13,4 @@ jobs:
         with:
           check_filenames: true
           check_hidden: true
-          skip: Code/OVDMX/src/ASF/*
+          skip: Code/OVDMX/src/ASF/**
